@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobilna.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label>Gra w kosci. Autor: </Label>
+            <Button Text="Rzuc koscmi" Clicked="Button_Clicked"></Button>
+            <HorizontalStackLayout MinimumHeightRequest="100" MinimumWidthRequest="0">
+                <Image x:Name="Obraz1" Source="question.jpg" WidthRequest="50" HeightRequest="30" Aspect="AspectFit" Scale="2"></Image>
+                <Image x:Name="Obraz2" Source="question.jpg" WidthRequest="100" HeightRequest="30" Aspect="AspectFit" Scale="2"></Image>
+
+                <Image x:Name="Obraz3" Source="question.jpg" WidthRequest="50" HeightRequest="30" Aspect="AspectFit" Scale="2"></Image>
+
+                <Image x:Name="Obraz4" Source="question.jpg" WidthRequest="100" HeightRequest="30" Aspect="AspectFit" Scale="2"></Image>
+
+                <Image x:Name="Obraz5" Source="question.jpg" WidthRequest="50" HeightRequest="30" Aspect="AspectFit" Scale="2"></Image>
+
+            </HorizontalStackLayout>
+
+            <Label x:Name="WynikLosowania" HorizontalTextAlignment="Center">Wynik tego losowania:</Label>
+            <Label x:Name="WynikGry" HorizontalTextAlignment="Center">Wynik gry:</Label>
+            <Button Text="RESETUJ WYNIK" Clicked="Button_Clicked_1"></Button>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
